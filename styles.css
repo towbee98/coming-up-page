@@ -12,6 +12,8 @@ section {
 .coming-soon {
   width: 550px;
   position: relative;
+  opacity: 0;
+  animation: zoom-in 3000ms 2s 1 forwards;
 }
 h1 {
   font-size: xx-large;
@@ -25,4 +27,43 @@ h1 {
 }
 .side-picture {
   position: relative;
+  right: -2000px;
+  animation: slide-in-left 2000ms 5s 1 forwards;
+}
+.fab {
+  color: black;
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    right: -2000px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@media (max-width: 506px) {
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: large;
+  }
+  .text-1 {
+    font-size: 2rem;
+  }
+
+  .side-picture img {
+    width: 50vh;
+  }
 }

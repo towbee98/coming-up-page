@@ -1,0 +1,28 @@
+body {
+  background-color: #f7fdfc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.coming-soon {
+  width: 550px;
+  position: relative;
+}
+h1 {
+  font-size: xx-large;
+  color: #263b5e;
+}
+.text-1 {
+  font-size: 4rem;
+}
+.bold-text {
+  font-weight: bolder;
+}
+.side-picture {
+  position: relative;
+}
